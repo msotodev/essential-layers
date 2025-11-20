@@ -1,3 +1,0 @@
-import{a as e,t}from"./index-BgF7nUgJ.js";import{t as n}from"./CodeExample-Dc7qzrzc.js";var r=e(t());function i(){return(0,r.jsxs)(`div`,{className:`space-y-6 dark:text-white text-gray-700`,children:[(0,r.jsx)(`h2`,{className:`text-3xl font-semibold`,children:`EssentialLayers.AzureBlobs`}),(0,r.jsx)(`p`,{children:`Wrapper sobre Azure.Storage.Blobs para subir/descargar/listar blobs fácilmente.`}),(0,r.jsx)(n,{title:`Ejemplos`,code:`await _blobService.UploadAsync("container", "file.png", stream);
-var files = await _blobService.ListAsync("container");
-var stream = await _blobService.DownloadAsync("container", "file.png");`})]})}export{i as default};

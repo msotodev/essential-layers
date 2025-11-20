@@ -1,4 +1,4 @@
-import{a as e,t}from"./index-BgF7nUgJ.js";import{t as n}from"./CodeExample-Dc7qzrzc.js";var r=e(t());function i(){return(0,r.jsxs)(`div`,{className:`space-y-6 dark:text-white text-gray-700`,children:[(0,r.jsx)(`h2`,{className:`text-3xl font-semibold`,children:`Getting Started`}),(0,r.jsx)(n,{title:`Instalación`,code:`dotnet add package EssentialLayers
+import{o as e,t}from"./index-DE2URFug.js";import"./Icon-um-GfDu4.js";import{t as n}from"./CodeExample-CCOypUz7.js";var r=e(t());function i(){return(0,r.jsxs)(`div`,{className:`space-y-6 dark:text-white text-gray-700`,children:[(0,r.jsx)(`h2`,{className:`text-3xl font-semibold`,children:`Getting Started`}),(0,r.jsx)(n,{title:`Instalación`,code:`dotnet add package EssentialLayers
 dotnet add package EssentialLayers.Request
 dotnet add package EssentialLayers.Dapper
 dotnet add package EssentialLayers.AzureBlobs`}),(0,r.jsx)(n,{title:`Registro de servicios (Program.cs)`,code:`// Ejemplo minimal para .NET 6/7/8
