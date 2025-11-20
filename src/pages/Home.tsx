@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Icon from "../components/Icon";
 
 export default function Home() {
     return (
@@ -12,19 +13,24 @@ export default function Home() {
 
             <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <CardLink titile="Getting Started"
-                    description="Instalación y configuración inicial" />
+                    description="Instalación y configuración inicial"
+                    iconName="arrow_right_alt" />
 
                 <CardLink titile="EssentialLayers (Core)"
-                    description="Helpers, Result pattern, extensions" />
+                    description="Helpers, Result pattern, extensions"
+                    iconName="hub" />
 
                 <CardLink titile="EssentialLayers.Request"
-                    description="Wrapper de HttpClient con múltiples interfaces" />
+                    description="Wrapper de HttpClient con múltiples interfaces"
+                    iconName="api" />
 
-                <CardLink titile="EssentialLayers.Data"
-                    description="Wrapper Dapper + Microsoft.Data.SqlClient" />
+                <CardLink titile="EssentialLayers.Dapper"
+                    description="Wrapper Dapper + Microsoft.Data.SqlClient"
+                    iconName="memory" />
 
                 <CardLink titile="EssentialLayers.AzureBlobs"
-                    description="Integración simplificada con Azure Blob Storage" />
+                    description="Integración simplificada con Azure Blob Storage"
+                    iconName="arrow_upload_progress" />
             </div>
         </div>
     );
@@ -33,15 +39,19 @@ export default function Home() {
 interface CardLinkProps {
     titile: string;
     description: string;
+    iconName?: string;
 }
 
 function CardLink(
-    { titile, description }: CardLinkProps
+    { titile, description, iconName }: CardLinkProps
 ) {
     return (
-        <Link to="/docs/essential-layers-azure-blobs" className="p-4 dark:bg-gray-900 bg-blue-100 border-[1px] border-blue-200 dark:border-gray-900 rounded shadow hover:shadow-md">
-            <h3 className="font-semibold">{titile}</h3>
-            <p className="text-sm mt-2">{description}</p>
-        </Link>
+        <div className={`flex ${iconName && "gap-2"} dark:bg-gray-900 bg-blue-100 border-[1px] border-blue-200 dark:border-gray-900 p-4 rounded shadow hover:shadow-md`}>
+                <Icon iconName={iconName} className="text-gray-50/50" />
+            <Link to="/docs/essential-layers-azure-blobs">
+                <h3 className="font-semibold">{titile}</h3>
+                <p className="text-sm mt-2">{description}</p>
+            </Link>
+        </div>
     );
 }

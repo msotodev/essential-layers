@@ -5,7 +5,7 @@ const items = [
     { label: "Getting Started", to: "/docs/getting-started" },
     { label: "EssentialLayers (Core)", to: "/docs/essential-layers" },
     { label: "EssentialLayers.Request", to: "/docs/essential-layers-request" },
-    { label: "EssentialLayers.Data", to: "/docs/essential-layers-data" },
+    { label: "EssentialLayers.Dapper", to: "/docs/essential-layers-data" },
     { label: "EssentialLayers.AzureBlobs", to: "/docs/essential-layers-azure-blobs" },
 ];
 
@@ -27,7 +27,7 @@ export default function Sidebar() {
                 ))}
             </ul>
             <footer className="text-center">
-                v1.0
+                v1.2.0
             </footer>
         </nav>
     );
