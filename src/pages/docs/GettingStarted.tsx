@@ -1,25 +1,18 @@
+import CodeExample from "../../components/CodeExample";
+
 export default function GettingStarted() {
     return (
-        <div className="space-y-6">
+        <div className="space-y-6 dark:text-white text-gray-700">
             <h2 className="text-3xl font-semibold">Getting Started</h2>
 
-            <section>
-                <h3 className="text-xl font-medium">Instalación</h3>
-                <pre className="bg-gray-900 text-gray-100 p-4 rounded mt-2">
-                    {
-                        `dotnet add package EssentialLayers
+            <CodeExample title="Instalación"
+                code={`dotnet add package EssentialLayers
 dotnet add package EssentialLayers.Request
 dotnet add package EssentialLayers.Dapper
-dotnet add package EssentialLayers.AzureBlobs`
-                    }
-                </pre>
-            </section>
+dotnet add package EssentialLayers.AzureBlobs`} />
 
-            <section>
-                <h3 className="text-xl font-medium mt-4">Registro de servicios (Program.cs)</h3>
-                <pre className="bg-gray-900 text-gray-100 p-4 rounded mt-2">
-                    {
-                        `// Ejemplo minimal para .NET 6/7/8
+            <CodeExample title="Registro de servicios (Program.cs)"
+                code={`// Ejemplo minimal para .NET 6/7/8
 var builder = WebApplication.CreateBuilder(args);
 
 // Registrar paquetes (ejemplo)
@@ -28,10 +21,7 @@ builder.Services.UseRequest();
 builder.Services.ConfigureAzureBlob(builder.Configuration.GetConnectionString("AzureBlob"));
 
 var app = builder.Build();
-app.Run();`
-                    }
-                </pre>
-            </section>
+app.Run();`} />
         </div>
     );
 }

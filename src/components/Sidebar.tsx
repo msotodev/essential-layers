@@ -11,14 +11,14 @@ const items = [
 
 export default function Sidebar() {
     return (
-        <nav className="p-4">
+        <nav className="flex h-full flex-col justify-between p-4 dark:text-white text-gray-700">
             <ul className="space-y-2">
                 {items.map((it) => (
                     <li key={it.to}>
                         <NavLink
                             to={it.to}
                             className={({ isActive }) =>
-                                `block px-3 py-2 rounded text-sm ${isActive ? "bg-blue-50 text-blue-700 font-medium" : "text-gray-700 hover:bg-gray-50"}`
+                                `block px-3 py-2 rounded text-sm ${isActive ? "dark:bg-gray-900 bg-blue-50 dark:text-white text-blue-700 font-medium" : "dark:text-gray-200 text-gray-700 dark:hover:bg-gray-50/5 hover:bg-gray-50"}`
                             }
                         >
                             {it.label}
@@ -26,6 +26,9 @@ export default function Sidebar() {
                     </li>
                 ))}
             </ul>
+            <footer className="text-center">
+                v1.0
+            </footer>
         </nav>
     );
 }

@@ -2,7 +2,7 @@ import CodeExpample from "../../components/CodeExample";
 
 export default function EssentialLayersData() {
     return (
-        <div className="space-y-6">
+        <div className="space-y-6 dark:text-white text-gray-700">
             <h2 className="text-3xl font-semibold">EssentialLayers.Data</h2>
 
             <p>

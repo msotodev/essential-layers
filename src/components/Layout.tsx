@@ -11,7 +11,7 @@ export default function Layout({ children }: LayoutProps) {
         <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-800">
             <Navbar />
             <div className="flex flex-1">
-                <aside className="w-72 hidden md:block border-r bg-white dark:bg-gray-800">
+                <aside className="w-72 hidden md:block bg-white dark:bg-gray-800 border-r dark:border-gray-900">
                     <Sidebar />
                 </aside>
                 <main className="flex-1 p-6 overflow-auto">
