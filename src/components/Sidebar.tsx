@@ -5,7 +5,7 @@ const items = [
     { label: "Getting Started", to: "/docs/getting-started" },
     { label: "EssentialLayers (Core)", to: "/docs/essential-layers" },
     { label: "EssentialLayers.Request", to: "/docs/essential-layers-request" },
-    { label: "EssentialLayers.Dapper", to: "/docs/essential-layers-data" },
+    { label: "EssentialLayers.Dapper", to: "/docs/essential-layers-dapper" },
     { label: "EssentialLayers.AzureBlobs", to: "/docs/essential-layers-azure-blobs" },
 ];
 
@@ -26,8 +26,12 @@ export default function Sidebar() {
                     </li>
                 ))}
             </ul>
-            <footer className="text-center">
-                v1.2.0
+            <footer className="flex gap-2 justify-center items-center">
+                <a href="https://github.com/msotodev" className="hover:underline">
+                    <span className="font-semibold">@</span>
+                    <span>msotodev</span>
+                </a>
+                <small>v1.2.0</small>
             </footer>
         </nav>
     );

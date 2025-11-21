@@ -19,7 +19,7 @@ function App() {
         <Route path="/docs/getting-started" element={<GettingStarted />} />
         <Route path="/docs/essential-layers" element={<EssentialLayersCore />} />
         <Route path="/docs/essential-layers-request" element={<EssentialLayersRequest />} />
-        <Route path="/docs/essential-layers-data" element={<EssentialLayersData />} />
+        <Route path="/docs/essential-layers-dapper" element={<EssentialLayersData />} />
         <Route path="/docs/essential-layers-azure-blobs" element={<EssentialLayersAzureBlobs />} />
 
         <Route path="*" element={<Navigate to="/" />} />
