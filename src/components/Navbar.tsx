@@ -13,6 +13,14 @@ export default function Navbar() {
                 </div>
 
                 <div className="flex items-center space-x-4">
+                                        <a
+                        className="text-sm dark:text-white text-blue-600 hover:underline"
+                        href="https://www.nuget.org/profiles/MSotoMoreno"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        NuGet.org
+                    </a>
                     <a
                         className="text-sm dark:text-white text-blue-600 hover:underline"
                         href="https://github.com/msotodev/EssentialLayers"

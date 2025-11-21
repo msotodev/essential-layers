@@ -3,7 +3,7 @@ import CodeExpample from "../../components/CodeExample";
 export default function EssentialLayersAzureBlobs() {
     return (
         <div className="space-y-6 dark:text-white text-gray-700">
-            <h2 className="text-3xl font-semibold">EssentialLayers.AzureBlobs</h2>
+            <h2 className="text-2xl sm:text-3xl font-semibold">EssentialLayers.AzureBlobs</h2>
 
             <p>Wrapper sobre Azure.Storage.Blobs para subir/descargar/listar blobs fácilmente.</p>
 

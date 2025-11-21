@@ -3,7 +3,7 @@ import CodeExpample from "../../components/CodeExample";
 export default function EssentialLayersCore() {
     return (
         <div className="space-y-6 dark:text-white text-gray-700">
-            <h2 className="text-3xl font-semibold">EssentialLayers (Core)</h2>
+            <h2 className="text-2xl sm:text-3xl font-semibold">EssentialLayers (Core)</h2>
 
             <p>
                 Paquete base con helpers, extensiones y el patrón `Result` para

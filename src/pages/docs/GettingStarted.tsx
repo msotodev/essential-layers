@@ -3,7 +3,7 @@ import CodeExample from "../../components/CodeExample";
 export default function GettingStarted() {
     return (
         <div className="space-y-6 dark:text-white text-gray-700">
-            <h2 className="text-3xl font-semibold">Getting Started</h2>
+            <h2 className="text-2xl sm:text-3xl font-semibold">Getting Started</h2>
 
             <CodeExample title="Instalación"
                 code={`dotnet add package EssentialLayers

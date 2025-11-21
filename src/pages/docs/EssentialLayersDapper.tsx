@@ -3,7 +3,7 @@ import CodeExpample from "../../components/CodeExample";
 export default function EssentialLayersDapper() {
     return (
         <div className="space-y-6 dark:text-white text-gray-700">
-            <h2 className="text-3xl font-semibold">EssentialLayers.Dapper</h2>
+            <h2 className="text-2xl sm:text-3xl font-semibold">EssentialLayers.Dapper</h2>
 
             <p>
                 Wrapper que une Dapper + Microsoft.Data.SqlClient para ejecutar stored
