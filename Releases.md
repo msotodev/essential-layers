@@ -17,3 +17,9 @@ v1.2.0
  - It was added "Copy code" button
  - Info alerts to show messages to users
  - Renamed from EssentialLayers.Data to EssentialLayers.Dapper
+
+v1.2.1
+ - Link routes changed in Home.tsx because only was showing "/docs/essential-layers-azure-blobs"
+
+v1.3.0
+ - Responsive UI improves and title page changed by "© Essential layers"
