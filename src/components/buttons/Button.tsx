@@ -69,10 +69,10 @@ export default function Button(
 
 export function ColorClass(colorType: ColorType) {
     switch (colorType) {
-        case "light": return `hover:bg-gray-900 hover:text-white`;
+        case "light": return `hover:bg-gray-100 dark:hover:bg-gray-900`;
         case "primary": return `bg-gray-900 text-white hover:bg-gray-800`;
         case "primary-outline": return `bg-transparent text-gray-900 border border-gray-900 hover:bg-blue-100`;
-        default: return `hover:bg-gray-900 hover:text-white`;
+        default: return `hover:bg-gray-100 dark:hover:bg-gray-900`;
     }
 }
 

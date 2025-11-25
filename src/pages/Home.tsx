@@ -47,7 +47,7 @@ function CardLink(
 ) {
     return (
         <div className={`flex ${iconName && "gap-2"} dark:bg-gray-900 bg-blue-100 border-[1px] border-blue-200 dark:border-gray-900 p-4 rounded shadow hover:shadow-md`}>
-                <Icon iconName={iconName} className="text-gray-50/50" />
+            <Icon iconName={iconName} className="dark:text-gray-50/50" />
             <Link to="/docs/essential-layers-azure-blobs">
                 <h3 className="font-semibold">{titile}</h3>
                 <p className="text-sm mt-2">{description}</p>

@@ -1,9 +1,10 @@
 import CodeExpample from "../../components/CodeExample";
+import { Typo } from "../../components/Typo";
 
 export default function EssentialLayersCore() {
     return (
         <div className="space-y-6 dark:text-white text-gray-700">
-            <h2 className="text-3xl font-semibold">EssentialLayers (Core)</h2>
+            <Typo children="EssentialLayers (Core)" type="title" />
 
             <p>
                 Paquete base con helpers, extensiones y el patrón `Result` para

@@ -1,6 +1,7 @@
 import toast from "react-hot-toast";
 import { useClipboard } from "../hooks/useClipboard";
 import Button from "./buttons/Button";
+import Code from "./Code";
 
 export interface CodeExpampleProps {
     title: string;
@@ -27,9 +28,7 @@ export default function CodeExpample(
                     copied ? <Button iconName="library_add_check" /> : <Button iconName="content_copy" onClick={handleCopy} />
                 }
             </div>
-            <pre className="bg-sky-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 p-4 border-[4px] border-sky-100 dark:border-gray-900 rounded overflow-x-auto">
-                {code}
-            </pre>
+            <Code code={code} />
         </section>
     );
 }

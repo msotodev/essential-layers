@@ -1,9 +1,10 @@
 import CodeExpample from "../../components/CodeExample";
+import { Typo } from "../../components/Typo";
 
 export default function EssentialLayersDapper() {
     return (
         <div className="space-y-6 dark:text-white text-gray-700">
-            <h2 className="text-3xl font-semibold">EssentialLayers.Dapper</h2>
+            <Typo children="EssentialLayers.Dapper" type="title" />
 
             <p>
                 Wrapper que une Dapper + Microsoft.Data.SqlClient para ejecutar stored

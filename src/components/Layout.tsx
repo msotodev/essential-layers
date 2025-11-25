@@ -8,7 +8,7 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
     return (
-        <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-800">
+        <div className="flex flex-col bg-gray-50 dark:bg-gray-800 min-h-[800px] overflow-y-auto">
             <Navbar />
             <div className="flex flex-1">
                 <aside className="w-72 hidden md:block bg-white dark:bg-gray-800 border-r dark:border-gray-900">

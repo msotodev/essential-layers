@@ -1,9 +1,10 @@
 import CodeExpample from "../../components/CodeExample";
+import { Typo } from "../../components/Typo";
 
 export default function EssentialLayersRequest() {
     return (
         <div className="space-y-6 dark:text-white text-gray-700">
-            <h2 className="text-3xl font-semibold">EssentialLayers.Request</h2>
+            <Typo children="EssentialLayers.Request" type="title" />
 
             <p>Wrapper sobre HttpClient con tres modos de uso: <b>IHttpService</b>, <b>IHttpRequest</b> e <b>IHttpFactory</b>.</p>
 
