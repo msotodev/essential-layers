@@ -21,3 +21,8 @@ v1.2.0
  v1.3.0
   - Asbtraction and new component creation + fixes
   - New offitial documentation to all sections and pages
+
+ v1.3.1
+  - Getting started description added
+  - When the light them is actived color from tab button was hide
+  - Remove program content from REQUEST_CUSTOM_FACTORY_CONFIGURATION_JSON constant

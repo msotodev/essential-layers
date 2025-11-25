@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
     return (
-        <header className="w-full bg-white dark:bg-gray-800 border-b dark:border-gray-900">
+        <header className="w-full text-blue-600 bg-white dark:bg-gray-800 border-b dark:border-gray-900">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
                 <div className="flex gap-4 items-center">
                     <img src="/favicon.png" alt="" className="w-10" />

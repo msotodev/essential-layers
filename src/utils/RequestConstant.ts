@@ -15,10 +15,7 @@ export const REQUEST_CUSTOM_FACTORY_CONFIGURATION_JSON = `{
 			"ContentType": "application/json"
 		}
 	},
-}
-
-builder.Services.AddHttpClients(configuration);
-builder.Services.ConfigureFactory();`;
+}`;
 
 export const REQUEST_CUSTOM_FACTORY_CONFIGURATION_PROGRAM = `builder.Services.AddHttpClients(configuration);
 builder.Services.ConfigureFactory();`;

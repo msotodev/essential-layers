@@ -27,7 +27,7 @@ export default function Sidebar() {
                 ))}
             </ul>
             <footer className="text-center">
-                v1.2.0
+                v1.3.1
             </footer>
         </nav>
     );
