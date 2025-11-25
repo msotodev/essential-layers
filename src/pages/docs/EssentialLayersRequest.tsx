@@ -1,33 +1,28 @@
-import CodeExpample from "../../components/CodeExample";
+import Code from "../../components/Code";
 import { Typo } from "../../components/Typo";
+import { REQUEST_IFACTORY_TOKEN_PROVIDER_DEFINITIONS, REQUEST_IHTTP_DEFINITIONS, REQUEST_IHTTPFACTORY_DEFINITIONS, REQUEST_IREQUEST_DEFINITIONS } from "../../utils/RequestConstant";
 
 export default function EssentialLayersRequest() {
     return (
         <div className="space-y-6 dark:text-white text-gray-700">
             <Typo children="EssentialLayers.Request" type="title" />
 
-            <p>Wrapper sobre HttpClient con tres modos de uso: <b>IHttpService</b>, <b>IHttpRequest</b> e <b>IHttpFactory</b>.</p>
+            <p>
+                The <b>IHttpFactory</b> interface defines a unified HTTP client abstraction for performing GET, POST, PUT, and DELETE requests.
+                It returns strongly typed results wrapped in <strong>HttpResponse&lt;T&gt;</strong> to ensure consistent handling of metadata, status codes, and errors.
+            </p>
 
-            <CodeExpample title="Registro"
-                code={`builder.Services.UseRequest();
-builder.Services.ConfigureRequest(
-    options =>
-    {
-        options.BaseUri = "https://api.example.com";
-        options.AppName = "MiApp";
-    }
-);`} />
+            <Typo type="subtitle" children="Definitions" />
 
-            <CodeExpample title="Ejemplo (IHttpService)"
-                code={`// inyección
-private readonly IHttpService _httpService;
+            <Typo type="heading" children="Factory" />
+            <Code title="IHttpFactory.cs" code={REQUEST_IHTTPFACTORY_DEFINITIONS} />
+            <Code title="IFactoryTokenProvider.cs" code={REQUEST_IFACTORY_TOKEN_PROVIDER_DEFINITIONS} />
 
-var response = await _httpService.GetAsync<MyDto>("endpoint/path");`} />
+            <Typo type="heading" children="Request" />
+            <Code title="IRequestService.cs" code={REQUEST_IREQUEST_DEFINITIONS} />
 
-            <CodeExpample title="IHttpFactory (cambio runtime)"
-                code={`// Obtener cliente configurado
-var client = await _httpFactory.Use("GitHubClient");
-var r = await client.GetAsync("repos/..");`} />
+            <Typo type="heading" children="Http" />
+            <Code title="IHttpService.cs" code={REQUEST_IHTTP_DEFINITIONS} />
         </div>
     );
 }

@@ -1,21 +1,30 @@
-import CodeExpample from "../../components/CodeExample";
+import Code from "../../components/Code";
 import { Typo } from "../../components/Typo";
+import { DAPPER_PROCEDURE_DEFINITIONS, DAPPER_QUERY_DEFINITIONS } from "../../utils/DapperConstant";
 
 export default function EssentialLayersDapper() {
     return (
         <div className="space-y-6 dark:text-white text-gray-700">
             <Typo children="EssentialLayers.Dapper" type="title" />
 
-            <p>
-                Wrapper que une Dapper + Microsoft.Data.SqlClient para ejecutar stored
-                procedures y consultas con menos boilerplate.
-            </p>
+            <div className="flex flex-col gap-2">
+                <p>
+                    This document describes two service interfaces used for executing stored procedures and SQL queries
+                    using <strong>Dapper</strong> within the EssentialLayers architecture:
+                </p>
+                <ul className="list-disc pl-6">
+                    <li>IProcedureService</li>
+                    <li>IQueryService</li>
+                </ul>
+                <p>
+                    All results are wrapped in <strong>ResultHelper&lt;T&gt;</strong> to provide consistent error handling and success responses.
+                </p>
+            </div>
 
-            <CodeExpample title="Ejemplo de QueryAsync"
-                code={`var users = await _db.QueryAsync<User>("sp_GetUsers", new { IsActive = true });`} />
+            <Typo type="subtitle" children="Definitions" />
 
-            <CodeExpample title="Execute"
-                code={`await _db.ExecuteAsync("sp_DeleteUser", new { Id = 10 });`} />
+            <Code title="IProcedureService.cs" code={DAPPER_PROCEDURE_DEFINITIONS} />
+            <Code title="IQueryService.cs" code={DAPPER_QUERY_DEFINITIONS} />
         </div>
     );
 }
