@@ -1,1 +1,0 @@
-import{o as e,t}from"./index-DE2URFug.js";var n=e(t());function r({className:e,iconName:t}){return e??=``,e+=` material-symbols-outlined`,(0,n.jsx)(`span`,{className:e,children:t})}export{r as t};

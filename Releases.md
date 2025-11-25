@@ -17,3 +17,7 @@ v1.2.0
  - It was added "Copy code" button
  - Info alerts to show messages to users
  - Renamed from EssentialLayers.Data to EssentialLayers.Dapper
+
+ v1.3.0
+  - Asbtraction and new component creation + fixes
+  - New offitial documentation to all sections and pages
