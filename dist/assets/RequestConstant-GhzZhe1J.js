@@ -13,10 +13,7 @@ builder.Services.ConfigureRequest(
 			"ContentType": "application/json"
 		}
 	},
-}
-
-builder.Services.AddHttpClients(configuration);
-builder.Services.ConfigureFactory();`,n=`builder.Services.AddHttpClients(configuration);
+}`,n=`builder.Services.AddHttpClients(configuration);
 builder.Services.ConfigureFactory();`,r=`public interface IHttpFactory
 {
     Task<HttpResponse<TResult>> GetAsync<TResult>(string clientName, string url);
